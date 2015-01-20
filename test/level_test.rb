@@ -8,7 +8,7 @@ class LevelTest < Minitest::Test
     end
 
     it "should include a wall" do
-      @level.read_level(1).to_s.must_include "---"
+      @level.read_abyss(1).to_s.must_include "---"
     end
   end
 end

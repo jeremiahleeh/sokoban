@@ -1,8 +1,15 @@
 class Level
   def initialize
-    @map = []
+    @abyss = []
   end
 
-  def read_level(number)
+  def read_abyss(number)
+  	new_abyss = File.read 'abysses/1.txt'
+  	rows = new_abyss.split('/n')
+
+  	rows.each do |row|
+      @abyss.push row.split
+  	end
   end
+
 end
